@@ -1,0 +1,21 @@
+{
+  "watch": [
+    "config",
+    "controllers",
+    "middleware",
+    "models", 
+    "routes",
+    "utils"
+  ],
+  "ext": "ts,json",
+  "ignore": [
+    "node_modules",
+    "public"
+  ],
+  "exec": "node --loader ts-node/esm server.ts",
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": 3000
+  },
+  "delay": "2500"
+}
